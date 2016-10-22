@@ -215,3 +215,31 @@ function ultimo(){
 	phone.value = Agenda[count-1][2];
 	notas.value = Agenda[count-1][3];
 }
+
+function buscar(){
+	var name = document.getElementById("name"), 
+		email = document.getElementById("email"),
+		phone = document.getElementById("phone"), 
+		notas = document.getElementById("notas");
+		
+	var value = prompt("Ingrese el nombre del usuario a buscar: ");
+
+	var contar = 0;
+
+
+	if (value != "null"){
+		for (var i=0; i<count; i++){
+			if (Agenda[i][0] == value){
+				name.value = Agenda[i][0];
+				email.value = Agenda[i][1];
+				phone.value = Agenda[i][2];
+				notas.value = Agenda[i][3];
+				contar = 1;
+			}
+		}
+
+		if (contar == 0){
+			alert("Usuario no encontrado!.");
+		}
+	}
+}
