@@ -1,0 +1,35 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	width: 33%;
+	margin: 30px auto;
+	border: 1px solid #000;
+	background-color: steelblue;
+}
+
+form div label {
+	color: #fff;
+}
+
+form div {
+	width: 90.5%;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #000;
+	background-color: rgba(0,0,0,0.4);
+}
+
+form div input[type="text"], input[type="password"] {
+	margin-top: 10px;
+	width: 96%;
+	padding: 7px;
+}
+
+form div input[type="button"] {
+	padding: 8px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.6);
+}

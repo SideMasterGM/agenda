@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body onload="iniciar();">
+    <form  class="contact_form" action="#" id="contact_form" runat="server">
+        <div>
+            <ul>
+                <li>
+                    <h2>Contactos</h2>
+                    <span class="required_notification">* Datos requeridos</span>
+                </li>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="Juan Perez" required />
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="info@developer.com" required />
+                    <span class="form_hint">Formato correcto: "name@example.com"</span>
+                </li>
+                <li>
+                    <label for="website">Numero de Telefono:</label>
+                    <input type="url" id="phone" placeholder="8888-8888" required pattern="(http|https)://.+" />
+                    <span class="form_hint">Formato correcto: "XXXX-XXXX"</span>
+                </li>
+                <li>
+                    <label for="message">Notas:</label>
+                    <textarea name="message" id="notas" cols="40" rows="6" required></textarea>
+                </li>
+                <li>
+                    <button class="submit" id="new" type="button" onclick="nuevo();" >Nuevo</button>
+                    <button class="submit" id="save" type="button" onclick="guardar();" >Guardar</button>
+                    
+                </li> 
+                <li>
+                    <button class="submit" id="last" type="button" onclick="anterior();">Anterior</button>
+                    <button class="submit" id="next" type="button" onclick="siguiente();">Siguiente</button>
+                    
+                </li>
+                <li>
+                    <button class="submit" id="firts" type="button" onclick="primero();">Primero</button>
+                    <button class="submit" id="end" type="button" onclick="ultimo();">Último</button>
+                    
+                </li>
+
+                <li>
+                    <button class="submit" id="delete" type="button" onclick="borrar();">Eliminar</button>
+                    
+                </li>
+            </ul>
+        </div>
+    </form>
+</body>
+</html>
